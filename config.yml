@@ -1,33 +1,19 @@
 site:
-  title: "Cecil"
-  baseline: "Your blog's butler."
-  baseurl: "/"
+  baseline: My blog note
+  baseurl: /
   canonicalurl: true
-  description: "Starter blog, with Netlify CMS."
-  pagination:
-    max: 5
-    path: "page"
   date:
-    format: "j F Y"
-    timezone: "Europe/Paris"
+    format: j F Y
+    timezone: Bangladesh/Dhaka
+  description: Starter blog
   netlify:
     cms:
-      path: "admin"
-      version: "latest"
+      path: admin
+      version: latest
     identity:
-      version: "v1"
-  output:
-    formats:
-      netlify_redirects:
-        mediatype: "text/plain"
-        extension: ""
-  virtualpages:
-    admin:
-      layout: admin/index
-      output: html
-      title: "Content Manager (Netlify CMS)"
-    home:
-      redirect: /
-    _redirects:
-      output: netlify_redirects
-theme: "hyde"
+      version: v1
+  pagination:
+    max: 10
+    path: page
+  title: NotesOfLiit
+theme: hyde
